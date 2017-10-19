@@ -224,6 +224,8 @@
 				return val.toUpperCase();
 			});
 
+			tp_inst._updateDateTime = $.timepicker._updateDateTime;
+
 			// detect which units are supported
 			tp_inst.support = detectSupport(
 					tp_inst._defaults.timeFormat +
